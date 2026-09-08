@@ -1,0 +1,8 @@
+services:
+  paper-etf-bot:
+    build: .
+    env_file: .env
+    command: ["run"]
+    volumes:
+      - ./data:/app/data
+
